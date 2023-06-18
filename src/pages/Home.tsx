@@ -59,7 +59,7 @@ const Home = () => {
               mockdata?.presentations.map((present) => (
                 <UnstyledButton key={present.ID} className={classes.item}>
                   <FcFile size={26} />
-                  <Text size="rem" mt={7}>
+                  <Text size="lg" mt={7}>
                     {present.description}
                   </Text>
                   <FcEmptyTrash
@@ -85,7 +85,7 @@ const Home = () => {
               mockdata?.models.map((models) => (
                 <UnstyledButton key={models.ID} className={classes.item}>
                   <FcOrgUnit size={26} />
-                  <Text size="xl" mt={7}>
+                  <Text size="lg" mt={7}>
                     {models.description}
                   </Text>
                   <FcEmptyTrash size={26} />
@@ -106,7 +106,7 @@ const Home = () => {
               mockdata?.videos.map((videos) => (
                 <UnstyledButton key={videos.ID} className={classes.item}>
                   <FcFilmReel size={26} />
-                  <Text size="xl" mt={7}>
+                  <Text size="lg" mt={7}>
                     {videos.description}
                   </Text>
                   <FcEmptyTrash size={26} color="red" />
