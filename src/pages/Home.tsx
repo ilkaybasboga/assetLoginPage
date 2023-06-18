@@ -39,8 +39,8 @@ const Home = () => {
         <Flex
           mih={50}
           bg="rgba(229, 242, 248, 0.444)"
-          gap="md"
-          justify="center"
+          gap="xs"
+          justify="space-between"
           align="start"
           direction="row"
           wrap="wrap"
@@ -53,13 +53,13 @@ const Home = () => {
             withBorder
             className={classes.inCard}
           >
-            <Text className={classes.smalTitle}>Presentations</Text>
+            <Text className={classes.smallTitle}>Presentations</Text>
 
             {mockdata.presentations &&
               mockdata?.presentations.map((present) => (
                 <UnstyledButton key={present.ID} className={classes.item}>
                   <FcFile size={26} />
-                  <Text size="xl" mt={7}>
+                  <Text size="rem" mt={7}>
                     {present.description}
                   </Text>
                   <FcEmptyTrash
@@ -78,7 +78,7 @@ const Home = () => {
             withBorder
             className={classes.inCard}
           >
-            <Text className={classes.smalTitle} sx={{ color: "blue" }}>
+            <Text className={classes.smallTitle} sx={{ color: "blue" }}>
               Models
             </Text>
             {mockdata.models &&
@@ -99,7 +99,7 @@ const Home = () => {
             withBorder
             className={classes.inCard}
           >
-            <Text className={classes.smalTitle} sx={{ color: "chocolate" }}>
+            <Text className={classes.smallTitle} sx={{ color: "chocolate" }}>
               Videos
             </Text>
             {mockdata?.videos &&

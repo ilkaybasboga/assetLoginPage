@@ -1,7 +1,7 @@
 import { createStyles, rem } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
-  smalTitle: {
+  smallTitle: {
     weight: "bold",
     mb: "sm",
     fontSize: "1.7rem",
@@ -30,8 +30,9 @@ const useStyles = createStyles((theme) => ({
   trash: {
   
     "&:hover": {
+      transition: "box-shadow 150ms ease, transform 100ms ease",
     
-      border:"red solid 2px",
+      
     },
   },
   grid: {
@@ -57,8 +58,7 @@ const useStyles = createStyles((theme) => ({
     transition: "box-shadow 150ms ease, transform 100ms ease",
     borderRadius: "1rem 0",
     border:"solid 2px rgb(170, 235, 230)",
-
-    "&:hover": {
+       "&:hover": {
       boxShadow: theme.shadows.md,
       transform: "scale(1.05)",
       
